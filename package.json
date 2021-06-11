@@ -1,0 +1,11 @@
+{
+  "name": "redux_plop_generator",
+  "version": "1.0.0",
+  "description": "Generator of redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "$your_username <$your_email> ($your_website)",
+  "license": "$license"
+}
