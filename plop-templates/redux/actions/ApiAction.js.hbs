@@ -1,0 +1,45 @@
+import api from '../axios/axios';
+
+export function delete{{pascalCase name}}(id) {
+  return {
+    type: 'REMOVE_{{upperCase name}}',
+    payload: api.delete(`{{camelCase name}}s/${id}`),
+    meta: {
+      id,
+    },
+  };
+}
+
+export function add{{pascalCase name}}({{camelCase name}}) {
+  return {
+    type: 'ADD_{{upperCase name}}',
+    payload: api.post('{{camelCase name}}s/', {{camelCase name}}),
+  };
+}
+
+export function toggleCreate{{pascalCase name}}() {
+  return {
+    type: 'TOGGLE_CREATE_{{upperCase name}}',
+  };
+}
+
+export function select{{pascalCase name}}({{camelCase name}}) {
+  return {
+    type: 'SELECT_{{upperCase name}}',
+    payload: { data: {{camelCase name}} },
+  };
+}
+
+export function update{{pascalCase name}}(id, {{camelCase name}}) {
+  return {
+    type: 'UPDATE_{{upperCase name}}',
+    payload: api.patch(`{{camelCase name}}s/${id}`, {{camelCase name}}),
+  };
+}
+
+export function fetch{{pascalCase name}}s() {
+  return {
+    type: 'FETCH_{{upperCase name}}S',
+    payload: api.get('{{camelCase name}}s'),
+  };
+}

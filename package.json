@@ -1,11 +1,15 @@
 {
   "name": "redux_plop_generator",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Generator of redux",
   "main": "index.js",
+  "dependencies": {
+    "plop": "^2.7.4"
+  },
   "scripts": {
+    "generate": "plop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "$your_username <$your_email> ($your_website)",
-  "license": "$license"
+  "author": "monsieursam <$samuel.s.mamane@gmail.com> ($https://monsieursam.github.io/)",
+  "license": "MIT"
 }

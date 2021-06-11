@@ -1,0 +1,36 @@
+// Initial State
+const initialState = {
+  {{pascalCase name}}: []
+}
+
+// Reducers (Modifies The State And Returns A New State)
+const {{camelCase name}}Reducer = (state = initialState, action) => {
+  switch (action.type) {
+    // Increase {{upperCase name}}
+    case 'ADD_{{upperCase name}}': {
+      return {
+        ...state,
+      }
+    }
+
+    case 'EDIT_{{upperCase name}}': {
+      return {
+        ...state
+      }
+    }
+
+    // Decrease {{pascalCase name}}
+    case 'DELETE_{{upperCase name}}': {
+      return {
+        ...state,
+      }
+    }
+
+    // Default
+    default: {
+      return state
+    }
+  }
+}
+
+export default {{camelCase name}}Reducer

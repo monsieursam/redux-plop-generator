@@ -1,0 +1,61 @@
+
+const INITIAL_STATE = { all: [], current: null, isCreating: false };
+
+function set{{pascalCase name}}s(state, action) {
+  const all = action.payload.data;
+  return { ...state, all };
+}
+
+function update{{pascalCase name}}Resolved(state, action) {
+  // TODO: throw error if id is not found!
+  const index = state.all.findIndex(({{camelCase name}}) => {{camelCase name}}.id === action.payload.data.id);
+  const all = [
+    ...state.all.slice(0, index),
+    action.payload.data,
+    ...state.all.slice(index + 1),
+  ];
+  return { ...state, all };
+}
+
+function add{{pascalCase name}}Resolved(state, action) {
+  const all = [
+    ...state.all,
+    action.payload.data,
+  ];
+  return { ...state, all, isCreating: false };
+}
+
+function remove{{pascalCase name}}Resolved(state, action) {
+  // TODO: throw error if id is not found!
+  const index = state.all.findIndex(({{camelCase name}}) => {{camelCase name}}.id === action.meta.id);
+  const all = [
+    ...state.all.slice(0, index),
+    ...state.all.slice(index + 1),
+  ];
+  const current = all[0];
+  return { ...state, all, current };
+}
+
+export default function (state = INITIAL_STATE, action) {
+  switch (action.type) {
+    case `FETCH_{{upperCase name}}S_SUCCESS`:
+      return set{{pascalCase name}}s(state, action);
+
+    case 'SELECT_{{upperCase name}}':
+      return { ...state, current: action.payload.data };
+
+    case `UPDATE_{{upperCase name}}_SUCCESS`:
+      return update{{pascalCase name}}Resolved(state, action);
+
+    case `ADD_{{upperCase name}}_SUCCESS`:
+      return add{{pascalCase name}}Resolved(state, action);
+
+    case 'TOGGLE_CREATE_{{upperCase name}}':
+      return { ...state, isCreating: !state.isCreating };
+
+    case `REMOVE_{{upperCase name}}_SUCCESS`:
+      return remove{{pascalCase name}}Resolved(state, action);
+    default:
+      return state;
+  }
+}
