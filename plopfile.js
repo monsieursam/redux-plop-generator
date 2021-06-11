@@ -94,7 +94,8 @@ module.exports = (plop) => {
       {
         type: "add",
         path: "src/redux/store/index.js",
-        templateFile: "node_modules/plop-templates/redux/store/apistore.js.hbs",
+        templateFile:
+          "node_modules/redux_plop_generator/plop-templates/redux/store/apistore.js.hbs",
       },
       {
         type: "add",
@@ -120,7 +121,7 @@ module.exports = (plop) => {
         type: "add",
         path: "src/redux/reducers/{{pascalCase name}}Reducer.js",
         templateFile:
-          "node_modules/plop-templates/redux/reducers/Reducer.js.hbs",
+          "node_modules/redux_plop_generator/plop-templates/redux/reducers/Reducer.js.hbs",
       },
     ],
   });
@@ -139,7 +140,8 @@ module.exports = (plop) => {
       {
         type: "add",
         path: "src/redux/actions/{{pascalCase name}}Actions.js",
-        templateFile: "node_modules/plop-templates/redux/actions/Action.js.hbs",
+        templateFile:
+          "node_modules/redux_plop_generator/plop-templates/redux/actions/Action.js.hbs",
       },
     ],
   });
@@ -159,7 +161,7 @@ module.exports = (plop) => {
         type: "add",
         path: "src/redux/actions/api{{pascalCase name}}Actions.js",
         templateFile:
-          "node_modules/plop-templates/redux/actions/ApiAction.js.hbs",
+          "node_modules/redux_plop_generator/plop-templates/redux/actions/ApiAction.js.hbs",
       },
     ],
   });
@@ -178,7 +180,8 @@ module.exports = (plop) => {
       {
         type: "add",
         path: "src/redux/reducers/api{{pascalCase name}}Reducer.js",
-        templateFile: "plop-templates/redux/reducers/ApiReducer.js.hbs",
+        templateFile:
+          "plop-templates/redux_plop_generator/redux/reducers/ApiReducer.js.hbs",
       },
     ],
   });
@@ -197,7 +200,8 @@ module.exports = (plop) => {
       {
         type: "add",
         path: "src/redux/axios/axios.js",
-        templateFile: "node_modules/plop-templates/redux/axios/Axios.js.hbs",
+        templateFile:
+          "node_modules/redux_plop_generator/plop-templates/redux/axios/Axios.js.hbs",
       },
     ],
   });
