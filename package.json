@@ -1,6 +1,6 @@
 {
   "name": "redux_plop_generator",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Generator of redux",
   "main": "plopfile.js",
   "dependencies": {

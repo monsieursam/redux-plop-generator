@@ -25,27 +25,32 @@ module.exports = (plop) => {
       {
         type: "add",
         path: "src/components/{{pascalCase name}}/{{pascalCase name}}.js",
-        templateFile: "plop-templates/Components/Component.js.hbs",
+        templateFile:
+          "node_modules/redux_plop_generator/plop-templates/Components/Component.js.hbs",
       },
       {
         type: "add",
         path: "src/components/{{pascalCase name}}/{{pascalCase name}}.test.js",
-        templateFile: "plop-templates/Components/Component.test.js.hbs",
+        templateFile:
+          "node_modules/redux_plop_generator/plop-templates/Components/Component.test.js.hbs",
       },
       {
         type: "add",
         path: "src/components/{{pascalCase name}}/{{pascalCase name}}.module.css",
-        templateFile: "plop-templates/Components/Component.module.css.hbs",
+        templateFile:
+          "node_modules/redux_plop_generator/plop-templates/Components/Component.module.css.hbs",
       },
       {
         type: "add",
         path: "src/components/{{pascalCase name}}/index.js",
-        templateFile: "plop-templates/Components/index.js.hbs",
+        templateFile:
+          "node_modules/redux_plop_generator/plop-templates/Components/index.js.hbs",
       },
       {
         type: "add",
         path: "src/components/index.js",
-        templateFile: "plop-templates/injectable-index.js.hbs",
+        templateFile:
+          "node_modules/redux_plop_generator/plop-templates/injectable-index.js.hbs",
         skipIfExists: true,
       },
       {
@@ -70,12 +75,14 @@ module.exports = (plop) => {
       {
         type: "add",
         path: "src/redux/store/index.js",
-        templateFile: "plop-templates/redux/store/store.js.hbs",
+        templateFile:
+          "node_modules/redux_plop_generator/plop-templates/redux/store/store.js.hbs",
       },
       {
         type: "add",
         path: "src/redux/reducers/index.js",
-        templateFile: "plop-templates/redux/reducers/index.js.hbs",
+        templateFile:
+          "node_modules/redux_plop_generator/plop-templates/redux/reducers/index.js.hbs",
       },
     ],
   });
@@ -87,12 +94,13 @@ module.exports = (plop) => {
       {
         type: "add",
         path: "src/redux/store/index.js",
-        templateFile: "plop-templates/redux/store/apistore.js.hbs",
+        templateFile: "node_modules/plop-templates/redux/store/apistore.js.hbs",
       },
       {
         type: "add",
         path: "src/redux/reducers/index.js",
-        templateFile: "plop-templates/redux/reducers/index.js.hbs",
+        templateFile:
+          "node_modules/redux_plop_generator/plop-templates/redux/reducers/index.js.hbs",
       },
     ],
   });
@@ -111,7 +119,8 @@ module.exports = (plop) => {
       {
         type: "add",
         path: "src/redux/reducers/{{pascalCase name}}Reducer.js",
-        templateFile: "plop-templates/redux/reducers/Reducer.js.hbs",
+        templateFile:
+          "node_modules/plop-templates/redux/reducers/Reducer.js.hbs",
       },
     ],
   });
@@ -130,7 +139,7 @@ module.exports = (plop) => {
       {
         type: "add",
         path: "src/redux/actions/{{pascalCase name}}Actions.js",
-        templateFile: "plop-templates/redux/actions/Action.js.hbs",
+        templateFile: "node_modules/plop-templates/redux/actions/Action.js.hbs",
       },
     ],
   });
@@ -149,7 +158,8 @@ module.exports = (plop) => {
       {
         type: "add",
         path: "src/redux/actions/api{{pascalCase name}}Actions.js",
-        templateFile: "plop-templates/redux/actions/ApiAction.js.hbs",
+        templateFile:
+          "node_modules/plop-templates/redux/actions/ApiAction.js.hbs",
       },
     ],
   });
@@ -187,7 +197,7 @@ module.exports = (plop) => {
       {
         type: "add",
         path: "src/redux/axios/axios.js",
-        templateFile: "plop-templates/redux/axios/Axios.js.hbs",
+        templateFile: "node_modules/plop-templates/redux/axios/Axios.js.hbs",
       },
     ],
   });
